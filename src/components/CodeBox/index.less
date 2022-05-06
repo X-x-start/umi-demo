@@ -1,0 +1,26 @@
+.code {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 32px;
+  width: 90px;
+  z-index: 1000;
+  color: rgba(22, 93, 255, 1);
+  text-align: right;
+  font-weight: bold;
+  -moz-user-select: none; /*火狐*/
+
+  -webkit-user-select: none; /*webkit浏览器*/
+
+  -ms-user-select: none; /*IE10*/
+
+  -khtml-user-select: none; /*早期浏览器*/
+
+  user-select: none;
+  :global {
+    .time {
+      color: rgba(0, 0, 0, 0.4);
+      cursor: not-allowed;
+    }
+  }
+}
