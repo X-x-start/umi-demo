@@ -89,19 +89,4 @@ export default defineConfig({
   // 非根域名部署的二级路径名称
   base: `/${config.title}/`,
   // build过程会把本地文件上传到oss服务器，路径为项目名称/package.json中的版本号
-  alioss: {
-    ossConfig: {
-      region: 'oss-cn-beijing',
-      accessKeyId: 'LTAIr2AktonLa8eY',
-      accessKeySecret: '3TTlWqoCyZ1WxICnVjaQyq91HALY1O',
-      bucket: 'smartscripts',
-      secure: true,
-    },
-    configName: '.alioss',
-    enabled: !IS_DEV,
-    cdnPrefix: `${UPLOAD_PREFIX}/`,
-    uploadPath: UPLOAD_PATH,
-    exclude: '',
-    ignoreHtml: true,
-  },
 });
